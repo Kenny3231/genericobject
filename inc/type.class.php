@@ -1685,7 +1685,7 @@ class PluginGenericobjectType extends CommonDBTM
                        `name` varchar(255) default NULL,
                        `comment` text,
                        `date_mod` TIMESTAMP NULL DEFAULT NULL,
-                       `date_creation` TIMESTAMP NOT NULL,
+                       `date_creation` TIMESTAMP NULL DEFAULT NULL,
                        PRIMARY KEY  (`id`),
                        KEY `date_mod` (`date_mod`),
                        KEY `date_creation` (`date_creation`),
